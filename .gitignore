@@ -13,3 +13,12 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+
+# Ignore temp sass files
+.sass-cache/
+
+# Ignore design files
+design/
+
+# Ignore the style guide
+style-guide.md
