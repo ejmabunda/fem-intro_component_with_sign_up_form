@@ -1,6 +1,13 @@
 $mobile-width: 375px;
 $desktop-width: 1440px;
 
+// lengths
+$xxsmall: 0.3rem;
+$xsmall: 0.5rem;
+$small: 0.8rem;
+$medium: 1rem;
+$large: 1.5rem;
+
 // colors
 $red: hsl(0, 100%, 74%);
 $green: hsl(154, 59%, 51%);
@@ -13,10 +20,18 @@ $grayish-blue: hsl(246, 25%, 77%);
 // typography
 $body-text: 16px;
 @font-face {
-  font-family: "Poppins";
+  font-family: "Poppins-Medium";
   src: url(./Poppins/Poppins-Medium.ttf);
 }
-$font: "Poppins";
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(./Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./Poppins/Poppins-Regular.ttf);
+}
+$font: "Poppins-Regular";
 
 // reset default styles
 * {
@@ -28,5 +43,70 @@ $font: "Poppins";
 body {
   font-size: $body-text;
   font-family: $font;
+  color: white;
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: $red;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
+main {
+  padding: $large;
+}
+
+.sign-up {
+  h1,
+  p:first-of-type {
+    text-align: center;
+  }
+  h2 {
+    background-color: $blue;
+    border-radius: $xsmall;
+    padding: $large;
+    font-size: $small;
+    text-align: center;
+
+    .light {
+      font-family: "Poppins-Light";
+    }
+  }
+
+  form {
+    background-color: white;
+    border-radius: $xsmall;
+    padding: $large;
+    display: flex;
+    flex-direction: column;
+    gap: $small;
+
+    input,
+    button {
+      width: 100%;
+      padding: $small;
+      border-radius: $xxsmall;
+    }
+
+    .terms {
+      color: $grayish-blue;
+      font-size: $small;
+      text-align: center;
+
+      a {
+        color: $red;
+      }
+    }
+  }
+}
+
+footer {
+  padding: $large;
+
+  p {
+    text-align: center;
+    font-size: $small;
+
+    a {
+      color: white;
+    }
+  }
+}

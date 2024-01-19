@@ -1,6 +1,12 @@
 @font-face {
-  font-family: "Poppins";
+  font-family: "Poppins-Medium";
   src: url(./Poppins/Poppins-Medium.ttf); }
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(./Poppins/Poppins-Light.ttf); }
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./Poppins/Poppins-Regular.ttf); }
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +14,52 @@
 
 body {
   font-size: 16px;
-  font-family: "Poppins"; }
+  font-family: "Poppins-Regular";
+  color: white;
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: #ff7a7a;
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+main {
+  padding: 1.5rem; }
+
+.sign-up h1,
+.sign-up p:first-of-type {
+  text-align: center; }
+.sign-up h2 {
+  background-color: #6055a5;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center; }
+  .sign-up h2 .light {
+    font-family: "Poppins-Light"; }
+.sign-up form {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; }
+  .sign-up form input,
+  .sign-up form button {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.3rem; }
+  .sign-up form .terms {
+    color: #b9b6d3;
+    font-size: 0.8rem;
+    text-align: center; }
+    .sign-up form .terms a {
+      color: #ff7a7a; }
+
+footer {
+  padding: 1.5rem; }
+  footer p {
+    text-align: center;
+    font-size: 0.8rem; }
+    footer p a {
+      color: white; }
 
 /*# sourceMappingURL=styles.css.map */
