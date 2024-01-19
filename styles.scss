@@ -1,0 +1,32 @@
+$mobile-width: 375px;
+$desktop-width: 1440px;
+
+// colors
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+$blue: hsl(248, 32%, 49%);
+
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+
+// typography
+$body-text: 16px;
+@font-face {
+  font-family: "Poppins";
+  src: url(./Poppins/Poppins-Medium.ttf);
+}
+$font: "Poppins";
+
+// reset default styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $body-text;
+  font-family: $font;
+}
+
