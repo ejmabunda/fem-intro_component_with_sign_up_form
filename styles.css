@@ -42,6 +42,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.8rem; }
+  .sign-up form label span {
+    color: #ff7a7a; }
   .sign-up form input,
   .sign-up form button {
     width: 100%;
@@ -53,6 +55,10 @@ main {
     text-align: center; }
     .sign-up form .terms a {
       color: #ff7a7a; }
+  .sign-up form .error {
+    max-height: 0; }
+  .sign-up form .error.active {
+    max-height: 100vh; }
 
 footer {
   padding: 1.5rem; }

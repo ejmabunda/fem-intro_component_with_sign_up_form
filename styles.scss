@@ -59,6 +59,7 @@ main {
   p:first-of-type {
     text-align: center;
   }
+
   h2 {
     background-color: $blue;
     border-radius: $xsmall;
@@ -79,6 +80,10 @@ main {
     flex-direction: column;
     gap: $small;
 
+    label span {
+      color: $red;
+    }
+
     input,
     button {
       width: 100%;
@@ -94,6 +99,13 @@ main {
       a {
         color: $red;
       }
+    }
+
+    .error {
+      max-height: 0;
+    }
+    .error.active {
+      max-height: 100vh;
     }
   }
 }
