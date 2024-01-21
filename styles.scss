@@ -75,38 +75,66 @@ main {
   form {
     background-color: white;
     border-radius: $xsmall;
-    padding: $large;
     display: flex;
     flex-direction: column;
     gap: $small;
+    padding: $large;
 
     #fname_error,
     #lname_error,
     #email_error,
     #password_error {
       color: $red;
+      text-align: right;
+      font-size: $small;
+      font-style: italic;
+      margin-top: calc(#{$small * -2 / 3});
     }
 
     label,
     button {
       width: 100%;
+    }
+
+    button {
+      background-color: $green;
+      text-transform: uppercase;
+      color: white;
       padding: $small;
       border-radius: $xxsmall;
+      border: none;
+      font-size: 0.7rem;
+      font-weight: 700;
     }
 
     label {
-      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
 
       #fname_error_img,
       #lname_error_img,
       #email_error_img,
       #password_error_img {
         display: none;
+        max-width: 100%;
+        margin-right: $small;
+        position: absolute;
+        right: 0;
       }
+    }
+    .error_active {
+      border: 2px solid $red;
     }
 
     input {
-      border: none;
+      border: 1px solid $grayish-blue;
+      border-radius: $xxsmall;
+      padding: $small;
+      width: 100%;
+      font-family: $font;
+      font-weight: 700;
     }
 
     .terms {

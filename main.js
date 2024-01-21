@@ -18,6 +18,7 @@ fname.addEventListener("input", (event) => {
     fname_error.textContent = "";
     fname_error.className = "error";
     fname_error_img.style.display = "none";
+    fname.className = "";
   } else {
     showFNameError();
     event.preventDefault();
@@ -29,6 +30,7 @@ lname.addEventListener("input", (event) => {
     lname_error.textContent = "";
     lname_error.className = "error";
     lname_error_img.style.display = "none";
+    lname.className = "";
   } else {
     showLNameError();
     event.preventDefault();
@@ -40,6 +42,7 @@ email.addEventListener("input", (event) => {
     email_error.textContent = "";
     email_error.className = "error";
     email_error_img.style.display = "none";
+    email.className = "";
   } else {
     showEmailError();
     event.preventDefault();
@@ -51,6 +54,7 @@ password.addEventListener("input", (event) => {
     password_error.textContent = "";
     password_error.className = "error";
     password_error_img.style.display = "none";
+    password.className = "";
   } else {
     showPasswordError();
     event.preventDefault();
@@ -80,9 +84,11 @@ form.addEventListener("submit", (event) => {
 });
 
 function showFNameError() {
-  if (fname.validity.valueMissing)
+  if (fname.validity.valueMissing) {
     fname_error.textContent = "First Name cannot be empty";
+  }
 
+  fname.className = "error_active";
   fname_error.className = "error.active";
   fname_error_img.style.display = "inline-block";
 }
@@ -91,14 +97,18 @@ function showLNameError() {
   if (lname.validity.valueMissing)
     lname_error.textContent = "Last Name cannot be empty";
 
+  lname.className = "error_active";
   lname_error.className = "error.active";
   lname_error_img.style.display = "inline-block";
 }
 
 function showEmailError() {
   if (email.validity.valueMissing)
+    email_error.textContent = "Email cannot be empty";
+  else if (!email.validity.valid)
     email_error.textContent = "Looks like this is not an email";
 
+  email.className = "error_active";
   email_error.className = "error.active";
   email_error_img.style.display = "inline-block";
 }
@@ -107,6 +117,7 @@ function showPasswordError() {
   if (password.validity.valueMissing)
     password_error.textContent = "Password cannot be empty";
 
+  password.className = "error_active";
   password_error.className = "error.active";
   password_error_img.style.display = "inline-block";
 }

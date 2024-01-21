@@ -38,29 +38,54 @@ main {
 .sign-up form {
   background-color: white;
   border-radius: 0.5rem;
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem; }
+  gap: 0.8rem;
+  padding: 1.5rem; }
   .sign-up form #fname_error,
   .sign-up form #lname_error,
   .sign-up form #email_error,
   .sign-up form #password_error {
-    color: #ff7a7a; }
+    color: #ff7a7a;
+    text-align: right;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: calc(-0.5333333333rem); }
   .sign-up form label,
   .sign-up form button {
-    width: 100%;
+    width: 100%; }
+  .sign-up form button {
+    background-color: #38cc8c;
+    text-transform: uppercase;
+    color: white;
     padding: 0.8rem;
-    border-radius: 0.3rem; }
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 700; }
   .sign-up form label {
-    border: 1px solid black; }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; }
     .sign-up form label #fname_error_img,
     .sign-up form label #lname_error_img,
     .sign-up form label #email_error_img,
     .sign-up form label #password_error_img {
-      display: none; }
+      display: none;
+      max-width: 100%;
+      margin-right: 0.8rem;
+      position: absolute;
+      right: 0; }
+  .sign-up form .error_active {
+    border: 2px solid #ff7a7a; }
   .sign-up form input {
-    border: none; }
+    border: 1px solid #b9b6d3;
+    border-radius: 0.3rem;
+    padding: 0.8rem;
+    width: 100%;
+    font-family: "Poppins-Regular";
+    font-weight: 700; }
   .sign-up form .terms {
     color: #b9b6d3;
     font-size: 0.8rem;
