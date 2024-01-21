@@ -6,11 +6,13 @@ $xxsmall: 0.3rem;
 $xsmall: 0.5rem;
 $small: 0.8rem;
 $medium: 1rem;
+$medim-large: 1.2rem;
 $large: 1.5rem;
 
 // colors
 $red: hsl(0, 100%, 74%);
 $green: hsl(154, 59%, 51%);
+$green-shadow: hsl(154, 56%, 48%);
 
 $blue: hsl(248, 32%, 49%);
 
@@ -54,14 +56,26 @@ main {
   padding: $large;
 }
 
+.sign-up > p {
+  font-size: $small;
+  margin-bottom: 7vh;
+}
 .sign-up {
+  padding-top: 6vh;
   h1,
   p:first-of-type {
     text-align: center;
   }
 
+  h1 {
+    font-size: $medim-large;
+    margin-bottom: $medim-large;
+  }
+
   h2 {
     background-color: $blue;
+    box-shadow: 0 5px 1px 1px hsla(0, 0%, 0%, 0.2);
+    margin-bottom: $large;
     border-radius: $xsmall;
     padding: $large;
     font-size: $small;
@@ -69,6 +83,7 @@ main {
 
     .light {
       font-family: "Poppins-Light";
+      font-weight: 400;
     }
   }
 
@@ -79,6 +94,7 @@ main {
     flex-direction: column;
     gap: $small;
     padding: $large;
+    box-shadow: 0 5px 1px 1px hsla(0, 0%, 47%, 0.3);
 
     #fname_error,
     #lname_error,
@@ -105,6 +121,12 @@ main {
       border: none;
       font-size: 0.7rem;
       font-weight: 700;
+      box-shadow: 0 4px 1px 1px $green-shadow;
+    }
+    button:hover {
+      background-color: hsla(154, 59%, 51%, 0.7);
+      cursor: pointer;
+      box-shadow: 0 4px 1px 1px hsla(154, 56%, 46%, 0.7);
     }
 
     label {
@@ -138,11 +160,13 @@ main {
 
     .terms {
       color: $grayish-blue;
-      font-size: $small;
+      font-size: $xsmall;
       text-align: center;
 
       a {
         color: $red;
+        font-weight: 600;
+        text-decoration: none;
       }
     }
 
