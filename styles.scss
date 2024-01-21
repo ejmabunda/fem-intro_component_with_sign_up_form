@@ -56,7 +56,7 @@ main {
   padding: $large;
 }
 
-.sign-up > p {
+.header > p {
   font-size: $small;
   margin-bottom: 7vh;
 }
@@ -189,6 +189,54 @@ footer {
 
     a {
       color: white;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+    width: 100vw;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $desktop-width;
+    min-height: 80vh;
+    margin: 0 auto;
+  }
+
+  .sign-up {
+    display: flex;
+    align-items: center;
+    max-width: $desktop-width;
+
+    .header {
+      width: 50%;
+      padding: $large;
+      max-width: 700px;
+    }
+    .form {
+      width: 50%;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    h1,
+    .header p {
+      text-align: left;
+    }
+
+    h1 {
+      font-family: "Poppins-Medium";
+      font-size: calc(#{$large * 2});
+      font-weight: 900;
+    }
+    .header p {
+      font-size: $medium;
+      line-height: 1.8;
     }
   }
 }

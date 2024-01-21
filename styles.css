@@ -24,7 +24,7 @@ body {
 main {
   padding: 1.5rem; }
 
-.sign-up > p {
+.header > p {
   font-size: 0.8rem;
   margin-bottom: 7vh; }
 
@@ -124,5 +124,41 @@ footer {
     font-size: 0.8rem; }
     footer p a {
       color: white; }
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(images/bg-intro-desktop.png);
+    width: 100vw; }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    min-height: 80vh;
+    margin: 0 auto; }
+
+  .sign-up {
+    display: flex;
+    align-items: center;
+    max-width: 1440px; }
+    .sign-up .header {
+      width: 50%;
+      padding: 1.5rem;
+      max-width: 700px; }
+    .sign-up .form {
+      width: 50%;
+      max-width: 450px;
+      margin: 0 auto; }
+    .sign-up h1,
+    .sign-up .header p {
+      text-align: left; }
+    .sign-up h1 {
+      font-family: "Poppins-Medium";
+      font-size: calc(3rem);
+      font-weight: 900; }
+    .sign-up .header p {
+      font-size: 1rem;
+      line-height: 1.8; } }
 
 /*# sourceMappingURL=styles.css.map */
