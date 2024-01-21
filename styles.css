@@ -42,13 +42,25 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.8rem; }
-  .sign-up form label span {
+  .sign-up form #fname_error,
+  .sign-up form #lname_error,
+  .sign-up form #email_error,
+  .sign-up form #password_error {
     color: #ff7a7a; }
-  .sign-up form input,
+  .sign-up form label,
   .sign-up form button {
     width: 100%;
     padding: 0.8rem;
     border-radius: 0.3rem; }
+  .sign-up form label {
+    border: 1px solid black; }
+    .sign-up form label #fname_error_img,
+    .sign-up form label #lname_error_img,
+    .sign-up form label #email_error_img,
+    .sign-up form label #password_error_img {
+      display: none; }
+  .sign-up form input {
+    border: none; }
   .sign-up form .terms {
     color: #b9b6d3;
     font-size: 0.8rem;
@@ -58,7 +70,8 @@ main {
   .sign-up form .error {
     max-height: 0; }
   .sign-up form .error.active {
-    max-height: 100vh; }
+    max-height: 100vh;
+    color: #ff7a7a; }
 
 footer {
   padding: 1.5rem; }

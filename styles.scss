@@ -80,15 +80,33 @@ main {
     flex-direction: column;
     gap: $small;
 
-    label span {
+    #fname_error,
+    #lname_error,
+    #email_error,
+    #password_error {
       color: $red;
     }
 
-    input,
+    label,
     button {
       width: 100%;
       padding: $small;
       border-radius: $xxsmall;
+    }
+
+    label {
+      border: 1px solid black;
+
+      #fname_error_img,
+      #lname_error_img,
+      #email_error_img,
+      #password_error_img {
+        display: none;
+      }
+    }
+
+    input {
+      border: none;
     }
 
     .terms {
@@ -106,6 +124,7 @@ main {
     }
     .error.active {
       max-height: 100vh;
+      color: $red;
     }
   }
 }
