@@ -127,8 +127,7 @@ footer {
 
 @media (min-width: 600px) {
   body {
-    background-image: url(images/bg-intro-desktop.png);
-    width: 100vw; }
+    background-image: url(images/bg-intro-desktop.png); }
 
   main {
     display: flex;
