@@ -62,4 +62,4 @@ The JS might be a bit messy, but it will be updated to prioritize efficiency as 
 ## Author
 
 - Frontend Mentor - [@ejmabunda](https://www.frontendmentor.io/profile/ejmabunda)
-- GitHub - [@ejmabunda](https://www.github.com/ejmabunda)
+- GitHub - [@ejmabunda](https://github.com/ejmabunda/)
