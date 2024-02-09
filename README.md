@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Intro Component With Sign Up Form Solution](https://your-solution-url.com)
-- Live Site URL: [Intro Component With Sign Up Form](ejmabunda.github.io/fem-intro_component_with_sign_up_form)
+- Solution URL: [Intro Component With Sign Up Form Solution](https://www.frontendmentor.io/solutions/responsive-intro-component-with-sign-up-form-_PVL7NY0yZ)
+- Live Site URL: [Intro Component With Sign Up Form](https://fem-intro-component-with-sign-up-form-gamma.vercel.app/)
 
 ## My process
 
@@ -42,10 +42,8 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - SCSS
-- CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- Constraint Validation API
 
 ### What I learned
 
